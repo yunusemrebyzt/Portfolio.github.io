@@ -1,20 +1,20 @@
 
-// function sendEmail()
-// {
-//     Email.send({
-//         SecureToken:"12e726ac-e084-4d07-86ae-8a919030377f",
-//         To : 'bayazityunusemre@outlook.com',
-//         From : 'yunusemre4638@gmail.com',
-//         Subject : "New Contact Form Enquiry",
-//         Body : "<b>Name</b>: " + document.getElementById("name").value
-//         + "<br> <b>Email</b>: " +document.getElementById("email").value
-//         + "<br> <b>Message</b>: "+ document.getElementById("message").value 
-//     }).then(
-//       message => alert("Message Sent Succesfully")
-//     );
+function sendEmail()
+{
+    Email.send({
+        SecureToken:"12e726ac-e084-4d07-86ae-8a919030377f",
+        To : 'bayazityunusemre@outlook.com',
+        From : 'yunusemre4638@gmail.com',
+        Subject : "New Contact Form Enquiry",
+        Body : "<b>Name</b>: " + document.getElementById("name").value
+        + "<br> <b>Email</b>: " +document.getElementById("email").value
+        + "<br> <b>Message</b>: "+ document.getElementById("message").value 
+    }).then(
+      message => alert("Message Sent Succesfully")
+    );
 
-//     console.log(document.getElementById("email").value);
-// }
+    console.log(document.getElementById("email").value);
+}
 
 
 let popup = document.getElementById("popup");
